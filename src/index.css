@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+      font-family: 'title';
+      src: url('/assets/fonts/HELLOIMPERFECTREGULAR.TTF') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
+@font-face {
+      font-family: 'text';
+      src: url('/assets/fonts/GothamRoundedBold/GothamRoundedMedium.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
+@font-face {
+      font-family: 'text';
+      src: url('/assets/fonts/GothamRoundedBold/GothamRoundedLight.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+}
+@font-face {
+      font-family: 'text';
+      src: url('/assets/fonts/GothamRoundedBold/GothamRounded-MediumItalic.otf') format('truetype');
+      font-weight: normal;
+      font-style: italic;
+}
+@font-face {
+      font-family: 'text';
+      src: url('/assets/fonts/GothamRoundedBold/GothamRoundedBold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+}
+
+body {
+      font-family: 'text', sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+
+      .left {
+            transform: translatex(100%);
+            transition: all 0.2s linear;
+            opacity: 0;
+      }
+      .right {
+            transform: translatex(-100%);
+            transition: all 0.2s linear;
+            opacity: 0;
+      }
+}
+
+@media screen  and (max-width: 768px) {
+      body {
+            font-size: 1rem;
+      }
+}
