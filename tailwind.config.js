@@ -14,6 +14,11 @@ export default {
       },
       colors: {
         'background-color': '#fef1e9',
+        'text-color': '#613c33',
+        'orange': '#e94c32',
+        'purple': '#634292',
+        'pink': '#ee7fa4',
+        
       }
     },
   },

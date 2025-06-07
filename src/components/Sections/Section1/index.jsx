@@ -19,7 +19,9 @@ const Section1 = () => {
 
       return (
             <Section id="section-1" className="mt-[5rem]">
-                  <h1>SESSÃO 1</h1>
+
+                  <h1 className='title text-orange text-[7rem]'>A scoop of our story</h1>
+                  <p className='text-text-color'>Think of us as your emotional support scoop — handcrafted with passion, scooped with pride, and taste-tested (maybe too much) for your happiness. Made with natural ingredients and plenty of love. Take a peek at some of our processes below.</p>
             </Section>
       )
 }

@@ -4,31 +4,31 @@
 
 @font-face {
       font-family: 'title';
-      src: url('/assets/fonts/HELLOIMPERFECTREGULAR.TTF') format('truetype');
+      src: url('/assets/fontspipo/GOTHAMBOLD.TTF') format('truetype');
       font-weight: normal;
       font-style: normal;
 }
 @font-face {
       font-family: 'text';
-      src: url('/assets/fonts/GothamRoundedBold/GothamRoundedMedium.ttf') format('truetype');
+      src: url('/assets/fontspipo/GOTHAMMEDIUM.TTF') format('truetype');
       font-weight: normal;
       font-style: normal;
 }
 @font-face {
       font-family: 'text';
-      src: url('/assets/fonts/GothamRoundedBold/GothamRoundedLight.ttf') format('truetype');
+      src: url('/assets/fontspipo/GOTHAMLIGHT.TTF') format('truetype');
       font-weight: 300;
       font-style: normal;
 }
 @font-face {
       font-family: 'text';
-      src: url('/assets/fonts/GothamRoundedBold/GothamRounded-MediumItalic.otf') format('truetype');
+      src: url('/assets/fontspipo/GOTHAMLIGHTITALIC.TTF') format('truetype');
       font-weight: normal;
       font-style: italic;
 }
 @font-face {
       font-family: 'text';
-      src: url('/assets/fonts/GothamRoundedBold/GothamRoundedBold.ttf') format('truetype');
+      src: url('/assets/fontspipo/GOTHAMBOLD.TTF') format('truetype');
       font-weight: bold;
       font-style: normal;
 }
@@ -36,7 +36,13 @@
 body {
       font-family: 'text', sans-serif;
       font-size: 1rem;
-      font-weight: 300;
+      font-weight: 400;
+
+      .title {
+            font-family: 'title', sans-serif;
+            font-weight: normal;
+            line-height: 90%;
+      }
 
       .left {
             transform: translatex(100%);
