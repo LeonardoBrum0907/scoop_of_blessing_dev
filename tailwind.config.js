@@ -13,7 +13,7 @@ export default {
         'table': "url('/assets/images/imagem_02.png')",
       },
       colors: {
-        'green-main': '#518361',
+        'background-color': '#fef1e9',
       }
     },
   },

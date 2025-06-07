@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="flex items-center gap-8 px-4 sm:px-20 py-4 w-full fixed bg-green-main z-10">
+    <header className="flex items-center gap-8 px-4 sm:px-20 py-4 w-full fixed bg-background-color z-10">
       <img src={logo} className="hidden sm:block" alt="café com prosa" width={100} height={100} />
 
       <nav className="w-full">

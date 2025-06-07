@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <main className="bg-green-main overflow-x-hidden">
+      <main className="bg-background-color overflow-x-hidden">
         <Navbar />
 
         <Section1 />
