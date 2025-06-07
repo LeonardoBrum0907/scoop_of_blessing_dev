@@ -21,40 +21,8 @@ const Section6 = () => {
       // }, [])
 
       return (
-            <footer id="section-6" className="section-6 bg-yellow-50 flex flex-col sm:flex-row gap-[3rem] justify-center items-center relative py-20 sm:py-40 px-4">
-                  <div className="w-1/2 sm:w-[15%] shrink-0 flex justify-center">
-                        <img src={saibaMais} />
-                  </div>
-                  <div className="flex flex-col gap-[1rem]">
-                        <div className="flex flex-col sm:flex-row gap-[1rem] ">
-                              <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
-                                    <img src={icone03} className="w-[2.5rem] h-[2.5rem]" />
-                                    <p>@cafecomprosatexas</p>
-                              </a>
-                              {/* <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
-                                    <img src={icone02} className="w-[2.5rem] h-[2.5rem]" />
-                                    <p>@cafecomprosatexas</p>
-                              </a> */}
-                        </div>
-                        {/* <div className="flex flex-col sm:flex-row gap-[1rem]">
-                              <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
-                                    <img src={icone03} className="w-[2.5rem] h-[2.5rem]" />
-                                    <p>@cafecomprosatexas</p>
-                              </a>
-                              <a href="https://www.instagram.com/cafecomprosatexas/" target="_blank" className="flex items-center gap-[1rem] hover:scale-105 ease-in-out duration-200">
-                                    <img src={icone04} className="w-[2.5rem] h-[2.5rem]" />
-                                    <p>@cafecomprosatexas</p>
-                              </a>
-                        </div> */}
-                  </div>
-                  <img
-                        src={grafismo02}
-                        className="hidden sm:block absolute top-[-12.5%] right-[-2%]"
-                  />
-                  <img
-                        src={grafismo02}
-                        className="hidden sm:block absolute bottom-0 left-[-3%]"
-                  />
+            <footer id="section-6" className="bg-yellow-400">
+                  <h1>SESSÃO 6</h1>
             </footer>
       )
 }

@@ -49,7 +49,7 @@ const Navbar = () => {
           {/* Links do menu (escondidos no mobile, visíveis no desktop) */}
           <div className={`w-full flex flex-col lg:flex-row items-center justify-center text-white text-center lg:text-left transform transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
             } lg:max-h-full lg:opacity-100 overflow-hidden lg:overflow-visible`}>
-            <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:items-center text-white text-center lg:text-left text-sm">
+            <ul className="flex flex-col lg:flex-row lg:space-x-8 lg:items-center text-black text-center lg:text-left text-sm">
               <li>
                 <a href="#section-1" onClick={(e) => handleScroll(e, '#section-1')} className="hover:text-slate-200 uppercase">Quem somos</a>
               </li>
