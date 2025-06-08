@@ -3,7 +3,7 @@ import Section from "../../SectionLayout"
 const Section4 = () => {
 
       return (
-            <Section id="section-4">
+            <Section id="section-4 " className="bg-pink">
                   <h1>SESSÃO 4</h1>
             </Section>
       )

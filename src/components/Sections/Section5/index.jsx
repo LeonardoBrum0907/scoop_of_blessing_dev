@@ -38,8 +38,9 @@ const Section5 = () => {
       // }, [])
 
       return (
-            <Section id="section-5" className="bg-blue-500">
-                  <h1>SESSÃO 5</h1>
+            <Section id="section-5">
+                  <h1 className="title text-pink text-[7rem]">United to Bless</h1>
+                  <p className="mt-[5rem] items-center justify-center">At Scoop of Blessing, we don’t scoop alone. Our partners walk with us in the mission to bless lives through ice cream — from training programs to global outreach. Together, we turn purpose into action, one scoop at a time.</p>
             </Section>
       )
 }
