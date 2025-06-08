@@ -1,6 +1,6 @@
 // import { useGSAP } from '@gsap/react';
 // import gsap from 'gsap';
-import Section from '../../SectionLayout';
+//import Section from '../../SectionLayout';
 import ilustracao from "/assets/imagenspipo/img_ilustracao.png";
 
 
@@ -20,10 +20,10 @@ const Section1 = () => {
       // }, [])
 
       return (
-            <section id="section-1" className="flex flex-col sm:flex-row w-full mt-[94px] items-center justify-center gap-3 pb-4">
-                  <div className=''><h2 className='text-purple md:text-3xl font-light text-center'>WHERE EVERY <b>SCOOP</b></h2></div>
-                  <div className='w-3/4 sm:w-2/4'><img src={ilustracao} alt="imagem de ilustraçao" /></div>
-                  <div className=''><h2 className='text-purple md:text-3xl font-light text-center'>TELLS A <b>STORY</b></h2></div>
+            <section id="section-1" className="flex flex-col md:flex-row items-center justify-center gap-4 pb-4 mt-[10.4vh]">
+                  <div className='ring-1 ring-black'><h2 className='text-purple md:text-3xl font-light text-center'>WHERE EVERY <b>SCOOP</b></h2></div>
+                  <div className='ring-1 ring-black '><img src={ilustracao} alt="imagem de ilustraçao"/></div>
+                  <div className='ring-1 ring-black'><h2 className='text-purple md:text-3xl font-light text-center'>TELLS A <b>STORY</b></h2></div>
             </section>
       )
 }

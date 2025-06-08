@@ -8,24 +8,28 @@
       font-weight: normal;
       font-style: normal;
 }
+
 @font-face {
       font-family: 'text';
       src: url('/assets/fontspipo/GOTHAMMEDIUM.TTF') format('truetype');
       font-weight: normal;
       font-style: normal;
 }
+
 @font-face {
       font-family: 'text';
       src: url('/assets/fontspipo/GOTHAMLIGHT.TTF') format('truetype');
       font-weight: 300;
       font-style: normal;
 }
+
 @font-face {
       font-family: 'text';
       src: url('/assets/fontspipo/GOTHAMLIGHTITALIC.TTF') format('truetype');
       font-weight: normal;
       font-style: italic;
 }
+
 @font-face {
       font-family: 'text';
       src: url('/assets/fontspipo/GOTHAMBOLD.TTF') format('truetype');
@@ -49,6 +53,7 @@ body {
             transition: all 0.2s linear;
             opacity: 0;
       }
+
       .right {
             transform: translatex(-100%);
             transition: all 0.2s linear;
@@ -56,7 +61,37 @@ body {
       }
 }
 
-@media screen  and (max-width: 768px) {
+.swiper {
+      width: 100%;
+      height: 100%;
+}
+
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      div {
+            background: #fff;
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+}
+
+.swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
       body {
             font-size: 1rem;
       }

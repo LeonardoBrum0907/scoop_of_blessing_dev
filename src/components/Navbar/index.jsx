@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "/logo.png";
-import icon_brasil from "/assets/imagenspipo/icon_brasil.png";
+//import icon_brasil from "/assets/imagenspipo/icon_brasil.png";
 import icon_eua from "/assets/imagenspipo/icon_eua.png";
 
 const Navbar = () => {
