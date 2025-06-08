@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="block md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-amber-950 focus:outline-none"
+              className="text-text-color focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* Links do menu (escondidos no mobile, visíveis no desktop) */}
           <div className={`w-full flex flex-col md:flex-row items-center justify-center text-white text-center md:text-left transform transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
             } md:max-h-full md:opacity-100 overflow-hidden md:overflow-visible`}>
-            <ul className="flex flex-col md:flex-row md:w-full md:justify-between gap-3 text-amber-950 text-center md:text-left text-sm ">
+            <ul className="flex flex-col md:flex-row md:w-full md:justify-between gap-3 text-text-color text-center md:text-left text-sm ">
               <li>
                 <a href="#section-1" onClick={(e) => handleScroll(e, '#section-1')} className="hover:text-amber-700 uppercase">ABOUT</a>
               </li>
@@ -67,7 +67,7 @@ const Navbar = () => {
                 <a href="#section-5" onClick={(e) => handleScroll(e, '#section-5')} className="hover:text-amber-700 uppercase">CONTACT</a>
               </li>
               <li className="flex lg:flex-row flex-shrink-0 gap-1 justify-center">
-                <button><img src={icon_brasil} alt="brazil icon" className="w-[1rem] h-[1rem] object-contain" /></button>
+              {/*  <button><img src={icon_brasil} alt="brazil icon" className="w-[1rem] h-[1rem] object-contain" /></button> */}
                 <button><img src={icon_eua} alt="usa icon" className="w-[1rem] h-[1rem] object-contain" /></button>
               </li>
             </ul>
