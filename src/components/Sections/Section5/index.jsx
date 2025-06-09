@@ -1,11 +1,4 @@
-// import { useGSAP } from "@gsap/react";
-// import gsap from "gsap";
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import React from "react";
 import Section from "../../SectionLayout";
-// import cafeteira from "/assets/images/cafeteira.png";
-// import calendario from "/assets/images/calendario.png";
-// import losangulo from "/assets/images/grafismo_amarelo.png";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -43,41 +36,50 @@ const Section5 = () => {
       // }, [])
 
       return (
-            <Section id="section-5" className="flex flex-col sm:flex-row gap-4">
-                  <div className="ring-1 ring-black sm:w-[30%]">
-                  <h1 className="title text-pink text-[5rem] sm:text-[7rem]">United to Bless</h1>
-                  <p className="mt-[5rem] ">At Scoop of Blessing, we don’t scoop alone. Our partners walk with us in the mission to bless lives through ice cream — from training programs to global outreach. Together, we turn purpose into action, one scoop at a time.</p>
+            <Section id="section-5" className="flex flex-col xl:flex-row justify-center">
+                  <div className="ring-1 ring-black w-full ">
+                        <h1 className="title text-pink text-[5rem] xl:text-[7rem]">United to Bless</h1>
+                        <p className="mt-[2rem] text-text-color">At Scoop of Blessing, we don’t scoop alone. Our partners walk with us in the mission to bless lives through ice cream — from training programs to global outreach. Together, we turn purpose into action, one scoop at a time.</p>
                   </div>
-                  <div className="ring-1 ring-black md:w-[70%]">
-                  <Swiper
-                        slidesPerView={2}
-                        spaceBetween={20}
-                        loop={true}
-                        cssMode={true}
-                        navigation={true}
-                        modules={[Navigation]}
-                        className="mySwiper"
-                  >
-                        <SwiperSlide>
-                              <div>Slide 1</div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                              <div>Slide 2</div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                              <div>Slide 3</div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                              <div>Slide 4</div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                              <div>Slide 5</div>
-                        </SwiperSlide>
-                  </Swiper>
+                  <div className="ring-1 ring-black xl:w-3/5">
+                        <Swiper
+                              slidesPerView={1}
+                              spaceBetween={20}
+                              loop={true}
+                              cssMode={true}
+                              navigation={true}
+                              modules={[Navigation]}
+                              className="mySwiper"
+                              breakpoints={{
+                                    640: {
+                                          slidesPerView: 2,
+                                          spaceBetween: 20,
+                                    },
+                                    768: {
+                                          slidesPerView: 2,
+                                          spaceBetween: 40,
+                                    },
+                              }}
+                        >
+                              <SwiperSlide>
+                                    <div>Slide 1</div>
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                    <div>Slide 2</div>
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                    <div>Slide 3</div>
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                    <div>Slide 4</div>
+                              </SwiperSlide>
+                              <SwiperSlide>
+                                    <div>Slide 5</div>
+                              </SwiperSlide>
+                        </Swiper>
                   </div>
 
             </Section>
       )
 }
-
 export default Section5
