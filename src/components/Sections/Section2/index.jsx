@@ -59,10 +59,15 @@ const Section2 = () => {
       // }, [])
 
       return (
-            <Section id="section-2" className="bg-background-color flex ">
-                  <h1 className='text-orange text-[4rem]'>A scoop of our story</h1>
-                  <p className='text-text-color'>Think of us as your emotional support scoop — handcrafted with passion, scooped with pride, and taste-tested (maybe too much) for your happiness. Made with natural ingredients and plenty of love. Take a peek at some of our processes below.</p>
-                  <div><img src="" alt="imagem do sorvete" /></div>
+            <Section id="section-2" className="bg-background-color flex gap-8">
+                  <div className='flex flex-col gap-6'>
+                        <h1 className='text-orange text-[4rem] title'>A scoop of our story</h1>
+                        <p className='text-text-color'>Think of us as your emotional support scoop — handcrafted with passion, scooped with pride, and taste-tested (maybe too much) for your happiness. Made with natural ingredients and plenty of love. Take a peek at some of our processes below.</p>
+                        <button className='border-2 border-orange px-4 py-2 rounded-full text-orange tracking-widest uppercase'>find out more</button>
+                  </div>
+                  <div className='w-2/4 flex-shrink-0'>
+                        <img src={sorveteimg} alt="imagem do sorvete" className="w-[100%]"/>
+                  </div>
             </Section>
       )
 }
