@@ -42,7 +42,7 @@ const Section3 = () => {
                   <div className='md:w-1/3 bg-background-color p-4 rounded-[2rem] md:bg-transparent'>
                         <h1 className='mb-4 title text-pink text-[4rem]'>Team delicious</h1>
                         <p className='text-text-color mb-4'>Scoop of Blessing is a Brazilian-born (Matteo Sorveteria Criativa), award-winning craft ice cream company, now in the U.S., creating natural ice creams while empowering individuals with disabilities through strategic partnerships.</p>
-                        <button className='ring-1 border-2 border-pink text-white bg-pink rounded-full py-2 px-6 uppercase tracking-[0.3rem]'>See the Magic Behind the Cone</button>
+                        <button className=' text-white bg-pink rounded-full py-2 px-6 uppercase tracking-[0.3rem]'>See the Magic Behind the Cone</button>
                   </div>
             </Section>
       )
