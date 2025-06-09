@@ -1,51 +1,7 @@
-import emailjs from '@emailjs/browser';
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import React from "react";
-import Input from "../../Input";
 import Section from '../../SectionLayout';
-import brasileiroEmKaty from "/assets/images/brasileiro_katy.png";
-import cafezinho from "/assets/images/cafezinho.png";
 
 
 const Section3 = () => {
-      const element = React.useRef();
-      const tl = React.useRef();
-      const [name, setName] = React.useState('');
-      const [email, setEmail] = React.useState('');
-      const [phone, setPhone] = React.useState('');
-      const [instagram, setInstagram] = React.useState('');
-
-      function sendEmail(e) {
-            e.preventDefault();
-
-            if (name === "" || email === "" || phone === "" || instagram === "") {
-                  alert("Preencha todos os campos");
-                  return;
-            }
-
-            const templateParams = {
-                  from_name: name,
-                  phone: phone,
-                  email: email,
-                  instagram: instagram
-
-            }
-
-            emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, templateParams, import.meta.env.VITE_EMAILJS_USER_ID)
-            .then((response) => {
-                  console.log('SUCCESS!', response.status, response.text);
-                  setName('');
-                  setEmail('');
-                  setPhone('');
-                  setInstagram('');
-                  alert("Dados enviados com sucesso!");
-            }, (err) => {
-                  console.log('ERRO:', err);
-                  alert("Tente novamente mais tarde.");
-            })
-      }
 
       // React.useLayoutEffect(() => {
       //       gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -82,8 +38,12 @@ const Section3 = () => {
       // }, [])
 
       return (
-            <Section id="section-3" className="bg-red-500">
-                  <h1>SESSÃO 3</h1>
+            <Section id="section-3" className="bg-[url('/assets/imagenspipo/img_video_bg.png')] bg-cover bg-center flex items-center justify-end gap-4">
+                  <div className='text-center w-1/3'>
+                        <h1 className='mb-4 title text-pink text-[4rem] text-start'>Team delicious</h1>
+                        <p className='text-text-color mb-4'>Scoop of Blessing is a Brazilian-born (Matteo Sorveteria Criativa), award-winning craft ice cream company, now in the U.S., creating natural ice creams while empowering individuals with disabilities through strategic partnerships.</p>
+                        <button className='ring-1 border-2 border-pink text-white bg-pink rounded-full py-2 px-6 uppercase'>See the Magic Behind the Cone</button>
+                  </div>
             </Section>
       )
 }
