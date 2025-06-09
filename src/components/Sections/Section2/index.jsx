@@ -1,4 +1,5 @@
 import Section from '../../SectionLayout';
+import sorveteimg from "/assets/imagenspipo/img_sorvetes_01.png";
 
 const Section2 = () => {
       // const el = React.useRef();
@@ -58,8 +59,10 @@ const Section2 = () => {
       // }, [])
 
       return (
-            <Section id="section-2" className="bg-blue-700 flex flex-col gap-9 relative">
-                  <h1>SESSÃO 2</h1>
+            <Section id="section-2" className="bg-background-color flex ">
+                  <h1 className='text-orange text-[4rem]'>A scoop of our story</h1>
+                  <p className='text-text-color'>Think of us as your emotional support scoop — handcrafted with passion, scooped with pride, and taste-tested (maybe too much) for your happiness. Made with natural ingredients and plenty of love. Take a peek at some of our processes below.</p>
+                  <div><img src="" alt="imagem do sorvete" /></div>
             </Section>
       )
 }
