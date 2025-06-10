@@ -52,19 +52,19 @@ const Navbar = () => {
             } md:max-h-full md:opacity-100 overflow-hidden md:overflow-visible`}>
             <ul className="flex flex-col md:flex-row md:w-full md:justify-between gap-3 text-text-color text-center md:text-left text-sm ">
               <li>
-                <a href="#section-1" onClick={(e) => handleScroll(e, '#section-1')} className="hover:text-amber-700 uppercase">ABOUT</a>
+                <a href="#section-2" onClick={(e) => handleScroll(e, '#section-2')} className="hover:text-amber-700 uppercase">ABOUT</a>
               </li>
               <li>
-                <a href="#section-2" onClick={(e) => handleScroll(e, '#section-2')} className="hover:text-amber-700 uppercase">MENU</a>
+                <a href="#section-3" onClick={(e) => handleScroll(e, '#section-3')} className="hover:text-amber-700 uppercase">MENU</a>
               </li>
               <li>
-                <a href="#section-3" onClick={(e) => handleScroll(e, '#section-3')} className="hover:text-amber-700 uppercase">PURPOSE</a>
+                <a href="#section-4" onClick={(e) => handleScroll(e, '#section-4')} className="hover:text-amber-700 uppercase">PURPOSE</a>
               </li>
               <li>
-                <a href="#section-4" onClick={(e) => handleScroll(e, '#section-4')} className="hover:text-amber-700 uppercase">LOCATIONS</a>
+                <a href="#section-5" onClick={(e) => handleScroll(e, '#section-5')} className="hover:text-amber-700 uppercase">LOCATIONS</a>
               </li>
               <li>
-                <a href="#section-5" onClick={(e) => handleScroll(e, '#section-5')} className="hover:text-amber-700 uppercase">CONTACT</a>
+                <a href="#section-6" onClick={(e) => handleScroll(e, '#section-6')} className="hover:text-amber-700 uppercase">CONTACT</a>
               </li>
               <li className="flex lg:flex-row flex-shrink-0 gap-1 justify-center">
               {/*  <button><img src={icon_brasil} alt="brazil icon" className="w-[1rem] h-[1rem] object-contain" /></button> */}
