@@ -10,7 +10,8 @@ export default {
         title: ['title', 'sans-serif'],
       },
       backgroundImage: {
-        'table': "url('/assets/images/imagem_02.png')",
+        'guiamobile': "url('/assets/imagenspipo/image_mobile.png')",
+        'guiadesktop': "url('/assets/imagenspipo/image_desktop.png')"
       },
       colors: {
         'background-color': '#fef1e9',

@@ -79,13 +79,13 @@ const Section6 = () => {
                               <p className="text-orange">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                         </div>
                         <div className="md:w-[33%] flex justify-center">
-                              <img src={logo} alt="Scoop of Blessing" />
+                              <img src={logo} className="h-[3rem] lg:h-[4.5rem]" alt="Scoop of Blessing" />
                         </div>
-                        <div className="md:w-[33%] flex justify-center lg:justify-end items-center gap-[1rem] sm:gap-[2rem] xl:gap-[3rem]">
-                              <img className="h-[75%] lg:h-[100%]" src={icon_instagram} alt="icone instagram" />
-                              <img className="h-[75%] lg:h-[100%]" src={icon_youtube} alt="icone youtube" />
-                              <img className="h-[75%] lg:h-[100%]" src={icon_facebook} alt="icone facebook" />
-                              <img className="h-[75%] lg:h-[100%]" src={icon_tiktok} alt="icone tiktok" />
+                        <div className="md:w-[33%] flex justify-center lg:justify-end items-center gap-[2rem] xl:gap-[3rem]">
+                              <img className="h-[1.6rem] sm:h-[2rem]" src={icon_instagram} alt="icone instagram" />
+                              <img className="h-[1.6rem] sm:h-[2rem]" src={icon_youtube} alt="icone youtube" />
+                              <img className="h-[1.6rem] sm:h-[2rem]" src={icon_facebook} alt="icone facebook" />
+                              <img className="h-[1.6rem] sm:h-[2rem]" src={icon_tiktok} alt="icone tiktok" />
                         </div>
                   </footer>
             </Section>

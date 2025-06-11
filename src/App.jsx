@@ -18,17 +18,17 @@ function App() {
 
         <Section1 />
 
-        <Section2 id="section-2" />
+        <Section2/>
 
-        <Section3 id="section-3" />
+        <Section7/>
 
-        <Section4 id="section-4" />
+        <Section3/>
 
-        <Section5 id="section-5" />
+        <Section4 />
 
-        <Section6 id="section-6" />
+        <Section5/>
 
-        <Section7 id="section-7" />
+        <Section6/>
       </main>
 
     </>
