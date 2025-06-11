@@ -120,6 +120,12 @@ body {
             font-size: 12px;
 
       }
+      .swiper-slide {
+            div{
+                height: 14rem;
+                  width: 14rem;  
+            }
+      }
 }
 
 @media screen and (max-width: 1280px) {
