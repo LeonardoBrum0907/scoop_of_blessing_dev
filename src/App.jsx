@@ -6,6 +6,7 @@ import Section4 from "./components/Sections/Section4";
 // import Section4 from "./components/Sections/Section4";
 import Section5 from "./components/Sections/Section5";
 import Section6 from "./components/Sections/Section6";
+import Section7 from "./components/Sections/Section7/indes";
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
         <Section5 id="section-5" />
 
         <Section6 id="section-6" />
+
+        <Section7 id="section-7" />
       </main>
 
     </>
