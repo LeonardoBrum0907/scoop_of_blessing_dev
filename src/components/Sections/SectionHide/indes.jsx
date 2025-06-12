@@ -9,10 +9,11 @@ import infoimg06 from "/assets/imagenspipo/img_infografico_06.png";
 //import bg_desktop from "/assets/imagenspipo/image_desktop.png";
 
 
-const Section7 = () => {
+const SectionHide = (isOpen) => {
+  console.log(isOpen)
 
   return (
-    <Section id="section-7" className="flex justify-center">
+    <Section id="section-7" className={`flex justify-center`}>
       <div className="flex flex-col justify-center items-center gap-[10rem] xl:gap-[0rem] py-[6rem] xl:py-[0] xl:pb-[4rem] bg-guiamobile bg-center bg-no-repeat bg-[length:1rem_100%]
       xl:bg-guiadesktop xl:bg-no-repeat xl:bg-[center_top_13rem] xl:bg-[length:82%_74%] xl:max-w-[1000px]">
 
@@ -107,4 +108,4 @@ const Section7 = () => {
   )
 }
 
-export default Section7
+export default SectionHide

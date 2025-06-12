@@ -48,8 +48,8 @@ const Navbar = () => {
           </div>
 
           {/* Links do menu (escondidos no mobile, visíveis no desktop) */}
-          <div className={`w-full flex flex-col md:flex-row items-center justify-center text-white text-center md:text-left transform transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-            } md:max-h-full md:opacity-100 overflow-hidden md:overflow-visible`}>
+          <div className={`w-full flex flex-col md:flex-row items-center justify-center text-white text-center md:text-left transform transition-all duration-300 ease-in-out
+          ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'} md:max-h-full md:opacity-100 overflow-hidden md:overflow-visible`}>
             <ul className="flex flex-col md:flex-row md:w-full md:justify-between gap-3 text-text-color text-center md:text-left text-sm tracking-[0.4rem]">
               <li>
                 <a href="#section-2" onClick={(e) => handleScroll(e, '#section-2')} className="hover:text-amber-700 uppercase">ABOUT</a>
