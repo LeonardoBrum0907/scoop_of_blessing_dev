@@ -37,10 +37,10 @@ const Section5 = () => {
 
       return (
             <Section id="section-5" className="flex flex-col xl:flex-row justify-center gap-[3rem] xl:gap-[2rem]">
-                  <div className="w-full flex flex-col items-center pt-[3rem] 2xl:pt-[7rem]">
+                  <div className="w-full flex flex-col items-center pt-[3rem] xl:pt-[8rem] 2xl:pt-[10rem]">
                         <h1 className="title text-pink text-[5rem] xl:text-[5rem] 2xl:text-[7rem] pl-[3rem] pr-[3rem] pb-[1rem] personalized-tracking">United to Bless</h1>
                         <p className="mt-[2rem] text-text-color pl-[3rem] pr-[3rem] 2xl:pr-[5rem]">At Scoop of Blessing, we don’t scoop alone. Our partners walk with us in the mission to bless lives through ice cream — from training programs to global outreach. Together, we turn purpose into action, one scoop at a time.</p>
-                        <button className='text-pink border-4 border-pink rounded-full py-2 px-6 uppercase tracking-[0.3rem] mt-[3rem] h-[4rem]'>FIND OUT MORE</button>
+                        {/* <button className='text-pink border-4 border-pink rounded-full py-2 px-6 uppercase tracking-[0.3rem] mt-[3rem] h-[4rem]'>FIND OUT MORE</button> */}
                   </div>
                   <div className="xl:w-3/5 flex justify-between">
                         <Swiper
@@ -56,7 +56,7 @@ const Section5 = () => {
                                           spaceBetween: 20,
                                     },
                                     2560: {
-                                          slidesPerView: 3,
+                                          slidesPerView: 2,
                                           spaceBetween: 20,
                                     },
                               }}

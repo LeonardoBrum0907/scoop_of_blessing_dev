@@ -29,7 +29,7 @@ const Section6 = () => {
 
       return (
             <Section id="section-6" className="flex flex-col gap-[7rem]">
-                  <div className="flex flex-col justify-center items-center gap-[4rem] lg:flex-row px-[2rem]">
+                  <div className="flex flex-col justify-center items-center gap-[4rem] lg:flex-row px-[2rem] lg:px-0">
                         <div id="map" className="h-[45rem] w-full lg:w-[50%] bg-white rounded-3xl flex items-center justify-center">
                               <h1 className="">MAPA</h1>
                         </div>

@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <main className="bg-background-color overflow-x-hidden">
+      <main className="bg-background-color overflow-x-hidden max-w-[1500px]">
         <Navbar />
 
         <Section1 />
