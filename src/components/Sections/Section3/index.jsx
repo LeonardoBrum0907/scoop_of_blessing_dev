@@ -36,7 +36,7 @@ const Section3 = () => {
    }, []);
 
    return (
-      <div className='bg-[url("/assets/imagenspipo/img_video_bg.png")] bg-cover bg-center w-full flex justify-center'>
+      <div className='bg-[url("/assets/imagenspipo/img_video_bg.png")] bg-cover bg-center w-full flex justify-center relative'>
          <Section id="section-3" className="flex items-center justify-center md:justify-end gap-4">
             <div className='md:w-2/5 bg-background-color flex flex-col items-center p-8 rounded-[2rem] md:bg-transparent'>
                <h1 className='mb-4 title text-pink'>Team delicious</h1>
@@ -44,6 +44,7 @@ const Section3 = () => {
                {/* <button className=' text-white bg-pink rounded-full py-2 px-6 uppercase tracking-[0.3rem]'>See the Magic Behind the Cone</button> */}
             </div>
          </Section>
+         <img src="/assets/imagenspipo/grafismo_01.png" alt="background" className='absolute top-0 translate-y-[-50%] right-0 w-1/4 lg:w-[20rem]' />
       </div>
    )
 }
