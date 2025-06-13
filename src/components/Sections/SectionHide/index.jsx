@@ -13,7 +13,7 @@ const SectionHide = ({isOpen}) => {
   console.log(isOpen)
 
   return (
-    <Section id="section-7" className={`flex justify-center ${isOpen ? '' : 'hidden'}`}>
+    <Section id="section-hide" className={`flex justify-center ${isOpen ? '' : 'hidden'}`}>
       <div className="flex flex-col justify-center items-center gap-[10rem] xl:gap-[0rem] py-[6rem] xl:py-[0] xl:pb-[4rem] bg-guiamobile bg-center bg-no-repeat bg-[length:1rem_100%]
       xl:bg-guiadesktop xl:bg-no-repeat xl:bg-[center_top_13rem] xl:bg-[length:82%_74%] xl:max-w-[1300px]">
 

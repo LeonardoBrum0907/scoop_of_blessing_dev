@@ -1,41 +1,39 @@
+import React from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Section from '../../SectionLayout';
 
 
 const Section3 = () => {
 
-   // React.useLayoutEffect(() => {
-   //       gsap.registerPlugin(useGSAP, ScrollTrigger);
+   React.useLayoutEffect(() => {
+      gsap.registerPlugin(ScrollTrigger);
 
-   //       gsap.context(() => {
-   //             tl.current = gsap.timeline({
-   //                   scrollTrigger: {
-   //                         trigger: ".animation-timeline",
-   //                         scrub: true,
-   //                         // markers: true,
-   //                         start: "top bottom",
-   //                         end: "70% 90%",
-   //                   }
-   //             })
-   //                   .fromTo("#animation-to-right", {
-   //                         opacity: 0,
-   //                         x: -160,
-   //                   }, {
-   //                         opacity: 1,
-   //                         x: 0,
-   //                   })
-   //                   .fromTo("#animation-to-left", {
-   //                         opacity: 0,
-   //                         x: 160,
-   //                   }, {
-   //                         opacity: 1,
-   //                         x: 0,
-   //                   })
-   //       }, element)
+      // Configuração inicial - posiciona o elemento fora da tela à direita
+      gsap.set('#section-3', { x: 150, opacity: 0 });
 
-   //       return () => {
-   //             gsap.killTweensOf('.animation-timeline');
-   //       }
-   // }, [])
+      // Animação da div .right (da direita para esquerda)
+      gsap.to('#section-3', {
+         x: 0,
+         opacity: 1,
+         duration: 0.5,
+         ease: "power2.out",
+         scrollTrigger: {
+            trigger: '#section-3',
+            start: "top 80%",
+            end: "bottom 20%",
+            toggleActions: "play none none reverse",
+         },
+      });
+
+      return () => {
+         ScrollTrigger.getAll().forEach(trigger => {
+            if (trigger.trigger && trigger.trigger.id === 'section-3') {
+               trigger.kill();
+            }
+         });
+      };
+   }, []);
 
    return (
       <div className='bg-[url("/assets/imagenspipo/img_video_bg.png")] bg-cover bg-center w-full flex justify-center'>
