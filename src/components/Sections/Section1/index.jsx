@@ -19,9 +19,9 @@ const Section1 = () => {
 
    return (
       <section id="section-1" className="fade-in flex flex-col md:flex-row items-center justify-center gap-4 pb-4 py-[6rem] min-h-[100vh]">
-         <h2 className='text-purple md:text-3xl font-light text-center text-[3rem]'>WHERE EVERY <b className="text-[3rem]">SCOOP</b></h2>
+         <h2 className='text-purple font-light text-center text-3xl md:text-5xl'>WHERE EVERY <b className="text-3xl md:text-5xl">SCOOP</b></h2>
          <img src={ilustracao} alt="imagem de ilustraçao" className="w-full sm:w-2/5" />
-         <h2 className='text-purple md:text-3xl font-light text-center text-[3rem]'>TELLS A <b className="text-[3rem]">STORY</b></h2>
+         <h2 className='text-purple font-light text-center text-3xl md:text-5xl'>TELLS A <b className="text-3xl md:text-5xl">STORY</b></h2>
       </section>
    )
 }

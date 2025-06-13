@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Section1 from "./components/Sections/Section1";
 import Section2 from "./components/Sections/Section2";
@@ -25,6 +26,8 @@ function App() {
         <Section5/>
 
         <Section6/>
+
+        <Footer />
       </main>
 
     </>

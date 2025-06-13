@@ -3,145 +3,164 @@
 @tailwind utilities;
 
 @font-face {
-      font-family: 'title';
-      src: url('/assets/fontspipo/GOTHAMBOLD.TTF') format('truetype');
-      font-weight: normal;
-      font-style: normal;
+   font-family: 'title';
+   src: url('/assets/fontspipo/GOTHAMBOLD.TTF') format('truetype');
+   font-weight: normal;
+   font-style: normal;
 }
 
 @font-face {
-      font-family: 'text';
-      src: url('/assets/fontspipo/GOTHAMMEDIUM.TTF') format('truetype');
-      font-weight: normal;
-      font-style: normal;
+   font-family: 'text';
+   src: url('/assets/fontspipo/GOTHAMMEDIUM.TTF') format('truetype');
+   font-weight: normal;
+   font-style: normal;
 }
 
 @font-face {
-      font-family: 'text';
-      src: url('/assets/fontspipo/GOTHAMLIGHT.TTF') format('truetype');
-      font-weight: 300;
-      font-style: normal;
+   font-family: 'text';
+   src: url('/assets/fontspipo/GOTHAMLIGHT.TTF') format('truetype');
+   font-weight: 200;
+   font-style: normal;
 }
 
 @font-face {
-      font-family: 'text';
-      src: url('/assets/fontspipo/GOTHAMLIGHTITALIC.TTF') format('truetype');
-      font-weight: normal;
-      font-style: italic;
+   font-family: 'text';
+   src: url('/assets/fontspipo/GOTHAMLIGHTITALIC.TTF') format('truetype');
+   font-weight: normal;
+   font-style: italic;
 }
 
 @font-face {
-      font-family: 'text';
-      src: url('/assets/fontspipo/GOTHAMBOLD.TTF') format('truetype');
-      font-weight: bold;
-      font-style: normal;
+   font-family: 'text';
+   src: url('/assets/fontspipo/GOTHAMBOLD.TTF') format('truetype');
+   font-weight: bold;
+   font-style: normal;
 }
 
 body {
-      font-family: 'text', sans-serif;
-      font-size: 1rem;
-      font-weight: 400;
+   font-family: 'text', sans-serif;
+   font-size: 1.1rem;
+   font-weight: 400;
 
-      .title {
-            font-family: 'title', sans-serif;
-            font-weight: normal;
-            line-height: 90%;
-      }
+   .title {
+      font-family: 'title', sans-serif;
+      font-weight: normal;
+      line-height: 90%;
+      font-size: 4rem;
+   }
 
-      .left {
-            transform: translatex(100%);
-            transition: all 0.2s linear;
-            opacity: 0;
-      }
+   .left {
+      transform: translatex(100%);
+      transition: all 0.2s linear;
+      opacity: 0;
+   }
 
-      .right {
-            transform: translatex(-100%);
-            transition: all 0.2s linear;
-            opacity: 0;
-      }
+   .right {
+      transform: translatex(-100%);
+      transition: all 0.2s linear;
+      opacity: 0;
+   }
 
-      .personalized-tracking {
-            letter-spacing: -0.3rem;
-      }
+   .personalized-tracking {
+      letter-spacing: -0.3rem;
+   }
 }
 
 .swiper {
-      width: 100%;
-      height: 100%;
-      overflow: visible;
+   width: 100%;
+   height: 100%;
+   overflow: visible;
 
-      .swiper-button-prev {
-            transform: translateX(-120%);
+   .swiper-button-prev {
+      transform: translateX(-120%);
+   }
+
+   .swiper-button-next {
+      transform: translateX(120%);
+   }
+
+   .swiper-button-prev,
+   .swiper-button-next {
+      border: 3px solid #ee7fa4;
+      border-radius: 50px;
+      height: 4rem;
+      width: 4rem;
+
+      &:after {
+         color: #ee7fa4;
+         font-size: 1.8rem;
+         font-weight: bold;
       }
-
-      .swiper-button-next {
-            transform: translateX(120%);
-      }
-
-      .swiper-button-prev,
-      .swiper-button-next {
-            border: 3px solid #ee7fa4;
-            border-radius: 50px;
-            height: 4rem;
-            width: 4rem;
-
-            &:after {
-                  color: #ee7fa4;
-                  font-size: 1.8rem;
-                  font-weight: bold;
-            }
-      }
+   }
 }
 
 .swiper-slide {
-      text-align: center;
-      font-size: 18px;
+   text-align: center;
+   font-size: 18px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   div {
+      background: #fff;
+      height: 18rem;
+      width: 18rem;
+      border-radius: 50%;
       display: flex;
+      flex-shrink: 0;
       justify-content: center;
       align-items: center;
-
-      div {
-            background: #fff;
-            height: 18rem;
-            width: 18rem;
-            border-radius: 50%;
-            display: flex;
-            flex-shrink: 0;
-            justify-content: center;
-            align-items: center;
-      }
+   }
 }
 
 .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
-      * {
-            font-size: 12px;
+   * {
+      font-size: 12px;
 
+   }
+
+   body {
+      .title {
+         font-size: 2.5rem;
       }
-      .swiper-slide {
-            div{
-                height: 14rem;
-                  width: 14rem;  
-            }
+   }
+
+   .swiper {
+      .swiper-button-prev,
+      .swiper-button-next {
+         height: 3rem;
+         width: 3rem;
+
+         &:after {
+            font-size: 1.2rem;
+         }
       }
+   }
+
+   .swiper-slide {
+      div {
+         height: 14rem;
+         width: 14rem;
+      }
+   }
 }
 
 @media screen and (max-width: 1280px) {
-      * {
-            font-size: 14px;
-      }
+   * {
+      font-size: 14px;
+   }
 
-      .swiper {
-
-            .swiper-button-prev,
-            .swiper-button-next {
-                  transform: translateX(0%);
-            }
+   .swiper {
+      .swiper-button-prev,
+      .swiper-button-next {
+         transform: translateX(0%);
       }
+   }
 }
