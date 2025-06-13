@@ -56,7 +56,7 @@ const SectionHide = ({isOpen}) => {
             <div className="flex flex-row justify-center items-center">
               <div className="w-2/3 flex flex-col justify-center items-center gap-4 xl:gap-0">
                 <h1 className="font-bold leading-none text-start text-text-color text-[1.6rem] xl:text-[2rem] tracking-tight">PRODUCTION.</h1>
-                <h2 className="text-text-color text-start w-4/5 xl:w-full font-thin">We make EVERYTHING here:</h2>
+                <h2 className="text-text-color text-wrap md:text-center xl:text-start w-4/5 xl:w-full font-thin">We make EVERYTHING here:</h2>
                 <ul className="text-black text-start list-disc list-inside">
                   <li>Pasteurized bases</li>
                   <li>Fresh fruit jams</li>
@@ -65,7 +65,7 @@ const SectionHide = ({isOpen}) => {
                 </ul>
               </div>
               <div className="flex justify-center items-center">
-                <img src={infoimg04} alt="imagem de processo de produção" className="h-[5rem] xl:h-full xl:w-full" />
+                <img src={infoimg04} alt="imagem de processo de produção" className="h-[36%] xl:h-full xl:w-full" />
               </div>
             </div>
           </div>

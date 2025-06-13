@@ -71,7 +71,7 @@ const Section2 = () => {
       <>
          <Section id="section-2" className="min-h-[unset] md:py-[0] bg-background-color flex flex-col md:flex-row">
             <div className='left flex flex-col items-center'>
-               <h1 className='text-orange title mb-4'>A scoop of our story</h1>
+               <h1 className='text-orange title mb-4 tracking-tighter'>A scoop of our story</h1>
                <p className='text-text-color'>Think of us as your emotional support scoop — handcrafted with passion, scooped with pride, and taste-tested (maybe too much) for your happiness. Made with natural ingredients and plenty of love. Take a peek at some of our processes below.</p>
                <button
                   onClick={(e) => handleScroll(e, '#section-hide')}
