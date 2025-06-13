@@ -58,7 +58,7 @@ const Section6 = () => {
             <img src="/assets/imagenspipo/map_texas_scoop.png" alt="mapa" className="h-full w-full object-contain rounded-3xl" />
          </div>
 
-         <div id="section6-right" className="lg:h-full w-full lg:w-1/2 bg-white rounded-3xl flex flex-col items-center justify-center gap-2 px-10 py-12">
+         <div id="section6-right" className="w-full lg:w-1/2 bg-white rounded-3xl flex flex-col items-center justify-center gap-2 px-10 py-12">
             <div className="flex w-full flex-col items-start font-light sm:text-[1rem] xl:text-[1.2rem] 2xl:text-[1.6rem] gap-[0.5rem]">
                <div className="flex items-center gap-[1rem]">
                   <img className="h-[75%]" src={icon_phone} />
