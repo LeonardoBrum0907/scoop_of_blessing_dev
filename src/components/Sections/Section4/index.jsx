@@ -54,7 +54,7 @@ const Section4 = () => {
       }, []);
 
       return (
-            <Section id="section-4" className="bg-background-color flex flex-col items-center justify-center py-20 sm:py-0 gap-12 xl:gap-8 min-h-[unset]">
+            <Section id="section-4" className="bg-background-color flex flex-col items-center justify-center py-20 gap-12 xl:gap-8 min-h-[unset]">
                   <h1 id="section4-title" className="text-orange title w-5/6 text-center tracking-tighter">Crafted with care. <br /> Shared with love.</h1>
                   <p id="section4-text" className="text-text-color w-full md:w-4/6 text-center">We craft outstanding ice cream to fund global missions, passionately dedicated to sharing the Gospel with over 3 billion unreached people. Because genuine ice cream blesses others.</p>
                   <div id="section4-image" className="w-full"><img src={proposito} alt="imagem proposito" className='xl:translate-y-[-10%]' /></div>
