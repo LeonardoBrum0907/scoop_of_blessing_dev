@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Section from "../../SectionLayout";
 import infoimg01 from "/assets/imagenspipo/img_infografico_01.png";
 import infoimg02 from "/assets/imagenspipo/img_infografico_02.png";
@@ -10,7 +11,6 @@ import infoimg06 from "/assets/imagenspipo/img_infografico_06.png";
 
 
 const SectionHide = ({isOpen}) => {
-  console.log(isOpen)
 
   return (
     <Section id="section-hide" className={`flex justify-center ${isOpen ? '' : 'hidden'}`}>
@@ -107,5 +107,4 @@ const SectionHide = ({isOpen}) => {
     </Section>
   )
 }
-
 export default SectionHide

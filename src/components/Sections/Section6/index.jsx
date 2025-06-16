@@ -14,6 +14,7 @@ const Section6 = () => {
       // Configuração inicial - posiciona os elementos fora da tela
       gsap.set('#section6-left', { x: -150, opacity: 0 });
       gsap.set('#section6-right', { x: 150, opacity: 0 });
+      gsap.set('#grafismo3', { y: "20%" });
 
       // Animação da primeira div (da esquerda para direita)
       gsap.to('#section6-left', {
@@ -37,8 +38,18 @@ const Section6 = () => {
          ease: "power2.out",
          scrollTrigger: {
             trigger: '#section-6',
-            start: "top 80%",
+            start: "top 60%",
             end: "bottom 20%",
+            toggleActions: "play none none reverse",
+         },
+      });
+      gsap.to('#grafismo3', {
+         y: "-58%",
+         scrollTrigger: {
+            scrub: 1,
+            trigger: '#section-6',
+            start: "top 80%",
+            end: "bottom 100%",
             toggleActions: "play none none reverse",
          },
       });
@@ -100,7 +111,7 @@ const Section6 = () => {
                </form>
             </div>
          </Section>
-         <img src="/assets/imagenspipo/graf_03.png" alt="grafismo3" className='absolute top-0 right-0 translate-y-[-43%] xl:translate-y-[-58%] w-1/4 xl:w-[15rem]' />
+         <img id='grafismo3' src="/assets/imagenspipo/graf_03.png" alt="grafismo3" className='absolute top-0 right-0 translate-y-[-43%] xl:translate-y-[-58%] w-1/4 xl:w-[15rem]' />
       </div>
    )
 }

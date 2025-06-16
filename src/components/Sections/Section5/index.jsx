@@ -40,7 +40,7 @@ const Section5 = () => {
          ease: "power2.out",
          scrollTrigger: {
             trigger: '#section-5',
-            start: "top 80%",
+            start: "top 50%",
             end: "bottom 20%",
             toggleActions: "play none none reverse",
          },

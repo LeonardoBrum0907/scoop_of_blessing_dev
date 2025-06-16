@@ -11,6 +11,8 @@ const Section3 = () => {
 
       // Configuração inicial - posiciona o elemento fora da tela à direita
       gsap.set('#section-3', { x: 150, opacity: 0 });
+      gsap.set('#grafismo1', { y: "20%"});
+      gsap.set('#grafismo2', { y: "146%"});
 
       // Animação da div .right (da direita para esquerda)
       gsap.to('#section-3', {
@@ -20,8 +22,28 @@ const Section3 = () => {
          ease: "power2.out",
          scrollTrigger: {
             trigger: '#section-3',
-            start: "top 50%",
+            start: "top 40%",
             end: "bottom 20%",
+            toggleActions: "play none none reverse",
+         },
+      });
+      gsap.to('#grafismo1', {
+         y: "-63%",
+         scrollTrigger: {
+            scrub: 1,
+            trigger: '#section-3',
+            start: "top 80%",
+            end: "bottom 100%",
+            toggleActions: "play none none reverse",
+         },
+      });
+      gsap.to('#grafismo2', {
+         y: "63%",
+         scrollTrigger: {            
+            scrub: 1,
+            trigger: '#section-3',
+            start: "top 10%",
+            end: "bottom 30%",
             toggleActions: "play none none reverse",
          },
       });
@@ -44,8 +66,8 @@ const Section3 = () => {
                {/* <button className=' text-white bg-pink rounded-full py-2 px-6 uppercase tracking-[0.3rem]'>See the Magic Behind the Cone</button> */}
             </div>
          </Section>
-         <img src="/assets/imagenspipo/graf_01.png" alt="grafismo1" className='absolute top-0 right-0 translate-y-[-63%] w-1/4 lg:w-[20rem]' />
-         <img src="/assets/imagenspipo/graf_02.png" alt="grafismo2" className='absolute bottom-0 left-0 translate-y-[63%] w-1/4 lg:w-[20rem]' />
+         <img id='grafismo1' src="/assets/imagenspipo/graf_01.png" alt="grafismo1" className='absolute top-0 right-0 w-1/4 lg:w-[20rem]' />
+         <img id='grafismo2' src="/assets/imagenspipo/graf_02.png" alt="grafismo2" className='absolute bottom-0 left-0 w-1/4 lg:w-[20rem]' />
 
       </div>
    )
