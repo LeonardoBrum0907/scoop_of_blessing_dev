@@ -69,13 +69,13 @@ const Section5 = () => {
                cssMode={true}
                navigation={true}
                modules={[Navigation]}
-               className="mySwiper"
+               className="mySwiper px-8"
                breakpoints={{
                   768: {
                      slidesPerView: 2,
-                     spaceBetween: 20,
+                     spaceBetween: 10,
                   },
-                  1280: {
+                  1536: {
                      slidesPerView: 3,
                      spaceBetween: 20,
                   }

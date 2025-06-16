@@ -47,6 +47,7 @@ body {
       font-weight: normal;
       line-height: 90%;
       font-size: 4rem;
+      letter-spacing: -0.4rem;
    }
 
    .left {
@@ -61,9 +62,6 @@ body {
       opacity: 0;
    }
 
-   .personalized-tracking {
-      letter-spacing: -0.3rem;
-   }
 }
 
 .swiper {
@@ -83,12 +81,12 @@ body {
    .swiper-button-next {
       border: 3px solid #ee7fa4;
       border-radius: 50px;
-      height: 4rem;
-      width: 4rem;
+      height: 3rem;
+      width: 3rem;
 
       &:after {
          color: #ee7fa4;
-         font-size: 1.8rem;
+         font-size: 1.2rem;
          font-weight: bold;
       }
    }
@@ -112,10 +110,12 @@ body {
    body {
       .title {
          font-size: 2.5rem;
+         letter-spacing: -0.3rem;
       }
    }
 
    .swiper {
+
       .swiper-button-prev,
       .swiper-button-next {
          transform: translateX(0%);
